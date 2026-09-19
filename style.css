@@ -435,6 +435,12 @@ a:hover { color: var(--accent-dark); }
   font-size: 1.05rem;
   color: var(--accent);
 }
+.solution-cards .card .card-meta {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0 0 12px;
+}
 .solution-cards .card p {
   font-size: 0.92rem;
   margin: 0 0 10px;
