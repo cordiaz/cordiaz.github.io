@@ -75,51 +75,49 @@
   <section class="section">
     <div class="container project-body">
       <p>
-        Behind every successful cloud migration lies the same question:
-        how can infrastructure stay resilient without straining the operating
-        budget? From the TMS Solution Day session with Huawei Cloud to
-        numerous other presales engagements, I've helped IT and business
-        teams translate operational challenges — from seasonal traffic
-        spikes to disaster-related downtime risk — into efficient, resilient
-        cloud native architectures. Below are a few cross-industry
-        solutioning scenarios I've designed.
+        Sebagai Partner Solution Architect Huawei Cloud, saya berkesempatan memandu
+        sesi "Expanding Cloud Capabilities with Huawei IaaS, ECS, and Auto-Scaling"
+        bersama Mega Buana Teknologi (MBT) — membahas bagaimana IaaS, ECS, dan
+        Cloud Storage Huawei Cloud dapat menjawab kebutuhan bisnis yang terus
+        bertumbuh, lengkap dengan demo produk langsung. Dari sesi ini, berikut
+        beberapa skenario solutioning yang relevan lintas industri.
       </p>
 
       <div class="solution-cards">
 
         <div class="card">
           <h3>Retail</h3>
-          <p><strong>Challenge:</strong> Infrastructure costs balloon during peak season, while normal traffic sits well below provisioned capacity.</p>
-          <p><strong>Proposed Architecture:</strong> Cloud Native 2.0 with elastic auto-scaling (ECS + CCE) and active-passive cross-region disaster recovery to protect transaction data.</p>
-          <p><strong>Outcome:</strong> Cost efficiency during off-peak periods and readiness for seasonal traffic surges without downtime.</p>
+          <p><strong>Challenge:</strong> Kapasitas storage untuk data produk, gambar, dan histori transaksi terus bertambah, sementara provisioning on-premise lambat dan mahal untuk di-scale.</p>
+          <p><strong>Proposed Architecture:</strong> Migrasi ke Huawei Cloud ECS untuk workload aplikasi, Cloud Storage (OBS) elastis untuk katalog produk, dan auto-scaling ECS untuk lonjakan traffic promo.</p>
+          <p><strong>Outcome:</strong> Kapasitas storage tumbuh sesuai kebutuhan tanpa investasi hardware di muka, performa aplikasi tetap stabil saat traffic melonjak.</p>
         </div>
 
         <div class="card">
           <h3>Public Sector</h3>
-          <p><strong>Challenge:</strong> Digital public services demand high SLAs and data regulation compliance, while IT budget and internal DR capacity are limited.</p>
-          <p><strong>Proposed Architecture:</strong> Hybrid cloud — sensitive data stays on-premise while non-sensitive workloads migrate to Huawei Cloud, with scheduled DR aligned to the agency's SLA.</p>
-          <p><strong>Outcome:</strong> Public service continuity is maintained during disruptions, with infrastructure modernization costs kept under control.</p>
+          <p><strong>Challenge:</strong> Arsip digital dan data layanan publik terus bertambah, sementara infrastruktur IaaS eksisting kaku terhadap pola beban musiman.</p>
+          <p><strong>Proposed Architecture:</strong> IaaS berbasis ECS dengan Cloud Storage untuk arsip data, auto-scaling dikonfigurasi mengikuti pola beban musiman layanan publik.</p>
+          <p><strong>Outcome:</strong> Kapasitas komputasi menyesuaikan otomatis saat periode sibuk, biaya infrastruktur lebih efisien dibanding kapasitas tetap sepanjang tahun.</p>
         </div>
 
         <div class="card">
           <h3>Government</h3>
-          <p><strong>Challenge:</strong> Legacy systems are prone to single points of failure, with manual, high-risk disaster recovery processes.</p>
-          <p><strong>Proposed Architecture:</strong> Disaster Recovery as a Service with scheduled data replication, regular failover testing, and recovery runbooks aligned to government governance.</p>
-          <p><strong>Outcome:</strong> Measured, tested RTO/RPO, reducing the risk of data loss and downtime for critical services.</p>
+          <p><strong>Challenge:</strong> Kebutuhan penyimpanan data pemerintahan terus bertambah seiring digitalisasi layanan, sementara anggaran capex terbatas dan pengadaan lambat.</p>
+          <p><strong>Proposed Architecture:</strong> Cloud Storage sebagai repository data terpusat, ECS untuk workload aplikasi layanan, auto-scaling menjaga ketersediaan saat beban tinggi.</p>
+          <p><strong>Outcome:</strong> Pengadaan kapasitas jadi lebih cepat (model OPEX), ketersediaan layanan terjaga tanpa over-provisioning.</p>
         </div>
 
         <div class="card">
           <h3>Gaming</h3>
-          <p><strong>Challenge:</strong> Server load fluctuates sharply during game launches or in-game events, where latency directly affects player retention.</p>
-          <p><strong>Proposed Architecture:</strong> Container-based architecture (CCE) with horizontal auto-scaling and multi-region load distribution to minimize latency.</p>
-          <p><strong>Outcome:</strong> A stable gameplay experience during player surges, with compute costs tracking actual usage patterns.</p>
+          <p><strong>Challenge:</strong> Kebutuhan compute melonjak drastis saat peluncuran game/event, sementara aset game membutuhkan storage yang cepat diakses dan skalabel.</p>
+          <p><strong>Proposed Architecture:</strong> ECS dengan auto-scaling untuk lonjakan concurrent user, dikombinasikan Cloud Storage untuk asset game dan backup data pemain.</p>
+          <p><strong>Outcome:</strong> Server game tetap responsif saat lonjakan pemain tanpa provisioning manual, biaya kompute mengikuti pola pemakaian aktual.</p>
         </div>
 
         <div class="card">
           <h3>E-commerce</h3>
-          <p><strong>Challenge:</strong> Downtime during flash sales directly impacts revenue, compounded by the risk of losing transaction data without a solid DR strategy.</p>
-          <p><strong>Proposed Architecture:</strong> Microservices architecture with auto-scaling for checkout &amp; payment gateway, plus multi-AZ DR for the transaction database.</p>
-          <p><strong>Outcome:</strong> The system stays resilient during traffic spikes, with much faster post-incident recovery time.</p>
+          <p><strong>Challenge:</strong> Traffic dan volume data tumbuh cepat saat flash sale, infrastruktur statis rawan bottleneck.</p>
+          <p><strong>Proposed Architecture:</strong> ECS dengan auto-scaling untuk layer aplikasi dan checkout, Cloud Storage untuk media produk dan arsip transaksi, IaaS sebagai fondasi elastis.</p>
+          <p><strong>Outcome:</strong> Sistem menangani lonjakan traffic flash sale tanpa downtime, pertumbuhan storage tertangani tanpa migrasi ulang infrastruktur.</p>
         </div>
 
       </div>
