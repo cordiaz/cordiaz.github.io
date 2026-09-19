@@ -418,6 +418,31 @@ a:hover { color: var(--accent-dark); }
 }
 .back-to-projects { margin-top: 40px; }
 
+.solution-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin: 24px 0 8px;
+}
+.solution-cards .card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+.solution-cards .card h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+.solution-cards .card p {
+  font-size: 0.92rem;
+  margin: 0 0 10px;
+}
+.solution-cards .card p:last-child {
+  margin: 0;
+}
+
 .project-card p:last-child {
   margin: 0;
   color: var(--text-muted);
