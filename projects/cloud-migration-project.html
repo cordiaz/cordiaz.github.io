@@ -57,14 +57,14 @@
     <div class="container project-body">
       <div class="solution-cards">
 
-        <div class="card">
-          <h3><em>Project title — add detail</em></h3>
-          <p class="card-meta"><em>Client / Industry — add detail</em> &middot; <em>Cloud Platform — add detail</em> &middot; <em>Duration — add detail</em></p>
-          <p><strong>Before Architecture:</strong> <em>add detail — existing infrastructure condition prior to migration.</em></p>
-          <p><strong>After Architecture:</strong> <em>add detail — target cloud architecture after migration.</em></p>
-          <p><strong>Technologies Used:</strong> <em>add detail — cloud platform, migration tools, and supporting technologies.</em></p>
-          <p><strong>Outcome / Impact:</strong> <em>add detail — results, business impact, or measurable metrics.</em></p>
-        </div>
+<div class="card">
+  <h3>Migrasi CDN Media &amp; Entertainment: Alibaba Cloud CDN → Huawei Cloud CDN</h3>
+  <p class="card-meta">Client / Industry: CGV (nama disamarkan) · Media &amp; Entertainment | Platform: Alibaba Cloud → Huawei Cloud | Duration: 2 pekan | Peran: Solution Architect</p>
+  <p><strong>Before Architecture:</strong> Gambar dan aset statis dari lebih dari satu domain didistribusikan lewat Alibaba Cloud CDN, dengan server origin di infrastruktur lokal/on-premises. Konfigurasi mencakup aturan cache, HTTPS/sertifikat SSL, proteksi hotlink (referer/URL auth), IP blacklist/whitelist, dan log.</p>
+  <p><strong>After Architecture:</strong> Seluruh domain dilayani Huawei Cloud CDN dengan origin tetap on-premises. Huawei OBS dipakai sebagai penyimpanan backup dan log. Semua konfigurasi di atas dimigrasi ke Huawei Cloud CDN. Cutover dilakukan sekaligus lewat perubahan CNAME/DNS dengan rollback plan.</p>
+  <p><strong>Technologies Used:</strong> Huawei Cloud CDN, Huawei OBS, Alibaba Cloud CDN (sumber), CNAME/DNS, SSL/TLS, referer &amp; URL authentication.</p>
+  <p><strong>Outcome / Impact:</strong> Migrasi selesai dalam 2 pekan dengan zero downtime. Proyek menjawab tiga tujuan bisnis: efisiensi biaya, peningkatan performa, dan konsolidasi vendor ke satu platform. Cutover didukung rollback plan sebagai pengaman.</p>
+</div>
 
       </div>
 
